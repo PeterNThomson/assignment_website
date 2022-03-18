@@ -1,0 +1,125 @@
+body {
+    background-image: url(../images/background.png);
+    background-repeat: repeat-y;
+    background-size: 900px 700;
+    position: relative;
+    background-blend-mode: multiply;
+    background-color: #F6F6F6;
+}
+  
+#navbar {
+    background: #C6C6C6;
+    width: 100%;
+    min-height: 45px;
+    margin: 0;
+    overflow: hidden;
+    margin-top: -8px;
+}
+  
+#navbar ul {
+    list-style: none;
+}
+  
+#navbar li {
+    display: inline;
+}
+  
+#navbar a {
+    color: #9250A2;
+    padding-right: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 6px;
+    padding-bottom: 8px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Poppins;
+}
+.logo {
+    width: 300px;
+    height: 150px;
+    float: right;
+    margin-top: 70px;
+    margin-right: 250px;
+    background-image: url(../images/spacex_logo.png);
+}
+.fig2 {
+    font-family: Poppins;
+    font-size: 13px;
+    margin-left: 1050px;
+}
+.subhead {
+    color: #41838B;
+    font-family: Poppins;
+    text-decoration: underline;
+    margin-top: -100px;
+    margin-left: 250px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.url a {
+    text-decoration: none;
+    color: #9250A2;
+    margin-left: 650px;
+    font-family: Poppins;
+    border: 2px solid #9250A2;
+    padding: 4px;
+    background: #C6C6C6;
+}
+.container {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: #4A4848;
+}
+.text p {
+    margin-left: 90px;
+}
+.p1 {
+    margin-top: 90px;
+    min-width: 750px;
+    margin-left: 90px;
+    background: #F6F6F6;
+}
+.p2 {
+    margin-top: 20px;
+    min-width: 750px;
+    margin-left: 90px;
+    background: #F6F6F6;
+}
+.p3 {
+    margin-top: 70px;
+    min-width: 750px;
+    margin-left: 90px;
+    background: #F6F6F6;
+}
+.p4 {
+    margin-top: 70px;
+    min-width: 750px;
+    margin-left: 90px;
+    background: #F6F6F6;
+    margin-bottom: 90px;
+}
+.snapshot {
+    width: 450px;
+    height: 650px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-left: 1050px;
+    background-image: url(../images/spacex_snapshot.png);
+}
+.fig {
+    font-family: Poppins;
+    font-size: 13px;
+    margin-left: 1050px;
+    margin-top: -1px;
+    margin-bottom: 50px;
+}
+.fig_bold {
+    font-weight: 600;
+}
+.fig_italic {
+    font-style: italic;
+  }
