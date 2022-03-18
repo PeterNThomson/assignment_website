@@ -1,0 +1,100 @@
+body {
+    background-image: url(../images/background.png);
+    background-repeat: repeat-y;
+    background-size: 900px 700;
+    position: relative;
+    background-color: #F6F6F6;
+    background-blend-mode: multiply;
+}
+  
+#navbar {
+    background: #C6C6C6;
+    width: 100%;
+    min-height: 45px;
+    margin: 0;
+    overflow: hidden;
+    margin-top: -8px;
+}
+  
+#navbar ul {
+    list-style: none;
+}
+  
+#navbar li {
+    display: inline;
+}
+  
+#navbar a {
+    color: #9250A2;
+    padding-right: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 6px;
+    padding-bottom: 8px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Poppins;
+}
+.subhead {
+    color: #41838B;
+    font-family: Poppins;
+    text-decoration: underline;
+    margin-top: 80px;
+    margin-left: 250px;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+.p1 {
+    color: #4A4848;
+    font-family: Poppins;
+    min-width: 750px;
+    margin-left: 150px;
+    margin-top: 90px;
+    font-size: 17px;
+    background-color: #F6F6F6;
+}
+.p2 {
+    color: #4A4848;
+    font-family: Poppins;
+    min-width: 750px;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 17px;
+    background-color: #F6F6F6;
+}
+.p3 {
+    color: #4A4848;
+    font-family: Poppins;
+    min-width: 650px;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 17px;
+    background-color: #F6F6F6;
+}
+.container {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+}
+.mod1 {
+    width: 450px;
+    height: 650px;
+    border: 1px solid #000;
+    margin-left: 1040px;
+    margin-top: 170px;
+    background-image: url(../images/falcon_heavy.jpeg);
+}
+.fig_bold {
+    font-weight: 600;
+}
+.fig {
+    font-family: Poppins;
+    font-size: 13;
+    margin-left: 1040px;
+    margin-top: -18px;
+    margin-bottom: 50px;
+}
+.ital {
+    font-style: italic;
+}
