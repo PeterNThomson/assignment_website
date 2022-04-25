@@ -1,0 +1,161 @@
+body {
+  background: #e7e7e7;
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+.cv {
+  width: 90%;
+  max-width: 950px;
+  background: #ffffff;
+  margin: 40px auto;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbar {
+  background: #68d3af;
+  overflow: hidden;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: 500;
+  width: 15%;
+  border: 2px solid #c798c9;
+  background: #c798c9;
+}
+
+#navbar a:hover {
+  background: #9d26a1;
+}
+
+.mainarea {
+  padding: 15px 30px;
+}
+
+.text {
+  font-family: poppins;
+}
+
+.text p {
+  margin-bottom: 20px;
+  float: left;
+  width: 60%;
+}
+
+.text h1 {
+  margin-right: 500px;
+  float: left;
+  font-weight: 600;
+  font-size: 45px;
+  margin-left: 10%;
+}
+
+.text .name {
+  float: right;
+  margin-top: -70px;
+  width: 35%;
+}
+
+.text a {
+  text-decoration: none;
+  margin-top: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 15px;
+  border: 2px solid #c798c9;
+  background: #c798c9;
+  color: #fff;
+  padding: 1px;
+}
+
+.text a:hover {
+  background: #9d26a1;
+}
+
+.text .p1 {
+  width: 100%;
+}
+
+.text .headshot {
+  position: relative;
+  float: right;
+  height: 330px;
+  border: 0.25em solid #9d26a1;
+  border-radius: 2em;
+}
+
+.text .heavy {
+  float: right;
+  width: 37%;
+  margin-top: -420px;
+  position: relative;
+  border: 0.25em solid #9d26a1;
+  border-radius: 2em;
+}
+
+.text .tests {
+  position: relative;
+  float: right;
+  right: 15%;
+  top: 1em;
+  border: 0.25em solid #9d26a1;
+  border-radius: 2em;
+}
+
+.text .snapshot {
+  float: right;
+  width: 38%;
+  border: 0.25em solid #9d26a1;
+  border-radius: 2em;
+  margin-top: -30em;
+}
+
+.text .horsehead {
+  position: relative;
+  border: 0.25em solid #9d26a1;
+  width: 100%;
+}
+
+.text .drag {
+  position: relative;
+  border: 0.25em solid #9d26a1;
+  border-radius: 2em;
+  float: right;
+  width: 35%;
+  margin-top: 3em;
+}
+
+.text .mount {
+  position: relative;
+  border: 0.25em solid #9d26a1;
+  border-radius: 2em;
+  float: right;
+  margin-top: 3em;
+}
+
+.text .ard {
+  position: relative;
+  border: 0.25em solid #9d26a1;
+  border-radius: 2em;
+  float: right;
+  width: 35%;
+  margin-top: 8em;
+}
+/*# sourceMappingURL=style.css.map */

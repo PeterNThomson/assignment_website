@@ -1,0 +1,144 @@
+$purple: rgb(199, 152, 201);
+$purple_dark: rgb(157, 38, 161);
+$grey: rgb(231, 231, 231);
+
+body {
+    background: $grey;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+.cv {
+    width: 90%;
+    max-width: 950px;
+    background: #ffffff;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#navbar {
+    background: rgb(104, 211, 175);
+    overflow: hidden;
+    & li {
+        display: inline;
+    }
+    & a {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: poppins;
+        font-size: 17px;
+        font-weight: 500;
+        width: 15%;
+        border: 2px solid $purple;
+        background: $purple;
+    }
+    & a:hover {
+        background: $purple_dark;
+    }
+}
+.mainarea {
+    padding: 15px 30px;
+}
+.text {
+    font-family: poppins;
+    & p {
+        margin-bottom: 20px;
+        float: left;
+        width: 60%;
+    }
+    & h1 {
+        margin-right: 500px;
+        float: left;
+        font-weight: 600;
+        font-size: 45px;
+        margin-left: 10%;
+    }
+    & .name{
+        float: right;
+        margin-top: -70px;
+        width: 35%;
+    }
+    & a {
+        text-decoration: none;
+        margin-top: 40px;
+        display: inline-block;
+        text-align: center;
+        margin-left: 45%;
+        margin-right: 45%;
+        margin-bottom: 15px;
+        border: 2px solid $purple;
+        background: $purple;
+        color: #fff;
+        padding: 1px;
+    }
+    & a:hover {
+        background: $purple_dark;
+    }
+    & .p1 {
+        width: 100%;
+    }
+}
+.text {
+    & .headshot {
+        position: relative;
+        float: right;
+        height: 330px;
+        border: .25em solid $purple_dark;
+        border-radius: 2em;
+    }
+    & .heavy {
+        float: right;
+        width: 37%;
+        margin-top: -420px;
+        position: relative;
+        border: .25em solid $purple_dark;
+        border-radius: 2em;
+    }
+    & .tests {
+        position: relative;
+        float: right;
+        right: 15%;
+        top: 1em;
+        border: .25em solid $purple_dark;
+        border-radius: 2em;
+    }
+    & .snapshot {
+        float: right;
+        width: 38%;
+        border: .25em solid $purple_dark;
+        border-radius: 2em;
+        margin-top: -30em;
+    }
+    & .horsehead {
+        position: relative;
+        border: .25em solid $purple_dark;
+        width: 100%;
+    }
+    .drag {
+        position: relative;
+        border: .25em solid $purple_dark;
+        border-radius: 2em;
+        float: right;
+        width: 35%;
+        margin-top: 3em;
+    }
+    .mount {
+        position: relative;
+        border: .25em solid $purple_dark;
+        border-radius: 2em;
+        float: right;
+        margin-top: 3em;
+    }
+    .ard {
+        position: relative;
+        border: .25em solid $purple_dark;
+        border-radius: 2em;
+        float: right;
+        width: 35%;
+        margin-top: 8em;
+    }
+}

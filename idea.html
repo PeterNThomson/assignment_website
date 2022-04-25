@@ -5,127 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <link rel="stylesheet" href="css/idea.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="cv">
     <header>
-        <nav id="navbar">
-            <div class="container">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="interest.html">Interest</a></li>
-                    <li><a href="personal.html">Personal Profile</a></li>
-                    <li><a href="job.html">Ideal Job</a></li>
-                    <li><a href="#">Project Idea</a></li>
-                    <li><a href="ref.html">Reference</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="interest.html">Interest</a></li>
+                <li><a href="personal.html">Personal Profile</a></li>
+                <li><a href="job.html">Ideal Job</a></li>
+                <li><a href="#">Project Idea</a></li>
+                <li><a href="ref.html">Reference</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="subhead">
-        <h2>Project Idea</h2>
+    <div class="mainarea">
+        <section class="text">
+            <h1>Project Idea</h1>
+            <h2>Device to assist in Polar Alignment of an equatorial camera mount.</h2>
+            <img class="horsehead" src="assets/horsehead_nebula.jpeg" alt="">
+            <p>This project idea is designed to assist in polar alignment for an equatorial camera 
+                mount. Polar alignment is an absolute must step when shooting astrophotography, 
+                if the mount isn't lined up correctly when shooting long exposure photos you will 
+                get what's called “star trails”(see photo to the right). And while it's not an over 
+                complicated task by any means it can be a tedious exercise every time you want to 
+                take some photos. While there are several self-aligning mounts on the market those 
+                products are incredibly expensive, coming in at $2000 on the cheaper end putting 
+                them a little out of reach for your everyday astro nerd. This project will attempt to 
+                leverage Arduino technology mounted to the camera mount displaying the 
+                information needed for polar alignment.</p>
+            <img src="assets/star_trails.jpeg" alt="" class="drag">
+            <p class="p1">My motivation for this project is admittedly a bit of a selfish one, as 
+                mentioned above polar aligning the mount is a pain. For those unable to afford an 
+                expensive self-aligning mount, the current best method involves trying to hold your 
+                phone flush against the mount with a compass app open while making adjustments with 
+                the other hand. This project would yield such an amazing quality of life improvement 
+                for me, and based on all the instructional videos I watched when getting started I 
+                think it's something that hobbyist astrophotography geeks everywhere would appreciate.</p>
+            <p class="p1">To polar align the mount you only need two pieces of information, know your 
+                latitude and your heading. To achieve this the device will you use a GPS module attached 
+                to an Arduino Uno board to return the users coordinates, although you only need to know 
+                latitude to adjust the elevation of the mount both would be needed for a later step in 
+                development. For the compass, the device will use a magnetometer module. For this to 
+                function optimally you need to know your magnetic declination, (the amount of variation 
+                between the magnetic pole and true north). This information can be found at 
+                https://www.magnetic-declination.com/. </p>
+            <p class="p1">Ultimately I would like to incorporate a WIFI module onto the board and have 
+                the device connect to the internet and pull users magnetic declination automatically, 
+                adjusting the numbers in the programs code on start up. This however is a quite a bit 
+                outside my area of expertise, so for now the added accuracy by entering in your magnetic 
+                declination will remain a manual task. Checking the declination of the location you will 
+                be shooting from via the above website and amending the code accordingly beforehand, of 
+                course if shooting from the same location (e.g. a backyard) this is only a one time step. 
+                You have to travel for a good while before a change in declination would be required.</p>
+            <img src="assets/canera_mount.png" alt="" class="mount">
+            <p>Next is has to be mounted to the cameras equatorial mount. This is going to be a 
+                custom 3D printed enclosure housing the components, allowing the base of the enclosure to 
+                be able to slide directly into the mounts motor rails. The flexibility of 3D printing will 
+                also mean being able to have different base options for different brands of equatorial 
+                mounts. Set into the top of this housing will be a screen displaying users coordinates 
+                and magnetic heading.</p>
+            <p>To aid in aligning the mount with as little confusion as possible, in addition 
+                to the screen displaying the users heading the device will use a beep in conjunction with 
+                current heading. With the intervals of the beep increasing and decreasing the closer or 
+                further away respectively the user is from south, ending with a continuous beep when south 
+                is achieved. Using both visual and audio data representation will make this device 
+                completely hands free and super easy to use, and as I will touch on below being able to hot 
+                swap this device into the mount will make doing a slight location changes quick enough to 
+                be actually worth considering.</p>
+            <p class="p1"> There is brainstorming happening on an alternate housing design and mounting method allowing 
+                the device to be installed as a permanent fixture, potentially bolted between the tripod and the 
+                equatorial mounts base plate. This would take the design from a 1-piece housing to a more 
+                segmented design with the bulk of the device needing to be mounted to the tripods legs so as to 
+                not interfere with the cameras rotation during shooting. This is the eventual goal for this project, 
+                along with the use of a WIFI function as mentioned above. This product would be a must any amateur 
+                astro photography enthusiast. </p>
+            <p>The software being used for this project is the Arduino IDE associated with the board 
+                available for free download at https://www.arduino.cc/en/software. Also on the site over at the 
+                documentation tab are hundreds of tutorials and documentation required to gain the necessary 
+                skills needed for programming the board. In addition to the Arduino Uno board itself the device 
+                will use a BN-880 GPS module with built-in HMC5883L magnetometer, giving visual and audio through 
+                use of a basic 16x2 LCD display and Buzzer. With the potential addition of a ESP8266 WIFI module 
+                or similar in later development. All of these components are readily available from countless 
+                online retailers at relatively low cost, and thanks to an active Arduino community and official 
+                documentation there are guides and templates out there for all of these modules. Lastly is the 
+                3D printed enclosure which will require the most design work as well as needing some knowledge 
+                of a 3D design software such as AutoCAD. The printing itself can easily be out sourced to a 
+                number of companies that will take your design and produce anything from single units to 
+                thousands, at again relatively low cost.</p>
+            <img src="assets/arduino_uno.png" alt="" class="ard">
+            <p class="p1">If this project is successful it will mean having a reliable, consistent and efficient way 
+                to get setup for a night of astrophotography. Not only will it make setup orders of magnitude easier, 
+                but to be able to quickly and easily do checks throughout the session if you happen to bump the tripod 
+                or decide to move the whole setup slightly for a better line of sight. I would like to think that with 
+                the all of the incredible things happening in the space industry such as the recently deployed James 
+                Web Space Telescope to name only one, and the fact that these events are getting tonnes of media attention 
+                gives me hope that more folks will be inspired to go out and capture a piece of this vast and possibly 
+                infinite universe we live in. It would be my hope that this device could make getting started with 
+                astrophotography a slightly less daunting and more enjoyable experience, taking the most of the 
+                guess work out of the alignment process. While preserving some sanity for when you have to learn 
+                the editing process.</p>
+            <a href="ref.html">Next Page</a>
+            </section>
+        </div>
     </div>
-    <p class="project"> A Device to assist in Polar Alignment of an equatorial camera mount. </p>
-    <div class="astro">
-        <p></p>
-    </div>
-    <p class="fig"><wrap class="fig_bold">Figure 7:</wrap><wrap class="fig_italic"> Horsehead Nebula </wrap>2019, Bray Falls</p>
-    <div class="p1">
-        <p>This project idea is designed to assist in polar alignment for an equatorial camera 
-            mount. Polar alignment is an absolute must step when shooting astrophotography, 
-            if the mount isn't lined up correctly when shooting long exposure photos you will 
-            get what's called “star trails”(see photo to the right). And while it's not an over 
-            complicated task by any means it can be a tedious exercise every time you want to 
-            take some photos. While there are several self-aligning mounts on the market those 
-            products are incredibly expensive, coming in at $2000 on the cheaper end putting 
-            them a little out of reach for your everyday astro nerd. This project will attempt to 
-            leverage Arduino technology mounted to the camera mount displaying the 
-            information needed for polar alignment.</p> 
-    </div>
-    <div class="drag">
-        <p></p>
-    </div>
-    <p class="fig2"><wrap class="fig_bold">Figure 8:</wrap><wrap class="fig_italic"> Star Drag </wrap>2018, unknown</p>
-    <section class="p2-5">
-        <p class="p2">My motivation for this project is admittedly a bit of a selfish one, as 
-            mentioned above polar aligning the mount is a pain. For those unable to afford an 
-            expensive self-aligning mount, the current best method involves trying to hold your 
-            phone flush against the mount with a compass app open while making adjustments with 
-            the other hand. This project would yield such an amazing quality of life improvement 
-            for me, and based on all the instructional videos I watched when getting started I 
-            think it's something that hobbyist astrophotography geeks everywhere would appreciate.</p>
-        <p class="p3">To polar align the mount you only need two pieces of information, know your 
-            latitude and your heading. To achieve this the device will you use a GPS module attached 
-            to an Arduino Uno board to return the users coordinates, although you only need to know 
-            latitude to adjust the elevation of the mount both would be needed for a later step in 
-            development. For the compass, the device will use a magnetometer module. For this to 
-            function optimally you need to know your magnetic declination, (the amount of variation 
-            between the magnetic pole and true north). 
-            
-            This information can be found at  https://www.magnetic-declination.com/. </p>
-        <p class="p4">Ultimately I would like to incorporate a WIFI module onto the board and have 
-            the device connect to the internet and pull users magnetic declination automatically, 
-            adjusting the numbers in the programs code on start up. This however is a quite a bit 
-            outside my area of expertise, so for now the added accuracy by entering in your magnetic 
-            declination will remain a manual task. Checking the declination of the location you will 
-            be shooting from via the above website and amending the code accordingly beforehand, of 
-            course if shooting from the same location (e.g. a backyard) this is only a one time step. 
-            You have to travel for a good while before a change in declination would be required.</p>
-        <p class="p5">Next is has to be mounted to the cameras equatorial mount. This is going to be a 
-            custom 3D printed enclosure housing the components, allowing the base of the enclosure to 
-            be able to slide directly into the mounts motor rails. The flexibility of 3D printing will 
-            also mean being able to have different base options for different brands of equatorial 
-            mounts. Set into the top of this housing will be a screen displaying users coordinates 
-            and magnetic heading.</p>
-    </section>
-    <div class="mount">
-        <p></p>
-    </div>
-    <p class="fig3"><wrap class="fig_bold">Figure 9:</wrap><wrap class="fig_italic"> Equatorial Mount </wrap>2018, Peter Thomson</p>
-    <section class="p6-7">
-        <p class="p6">To aid in aligning the mount with as little confusion as possible, in addition 
-            to the screen displaying the users heading the device will use a beep in conjunction with 
-            current heading. With the intervals of the beep increasing and decreasing the closer or 
-            further away respectively the user is from south, ending with a continuous beep when south 
-            is achieved. Using both visual and audio data representation will make this device 
-            completely hands free and super easy to use, and as I will touch on below being able to hot 
-            swap this device into the mount will make doing a slight location changes quick enough to 
-            be actually worth considering.</p>
-        <p class="p6_5"> There is brainstorming happening on an alternate housing design and mounting method allowing 
-            the device to be installed as a permanent fixture, potentially bolted between the tripod and the 
-            equatorial mounts base plate. This would take the design from a 1-piece housing to a more 
-            segmented design with the bulk of the device needing to be mounted to the tripods legs so as to 
-            not interfere with the cameras rotation during shooting. This is the eventual goal for this project, 
-            along with the use of a WIFI function as mentioned above. This product would be a must any amateur 
-            astro photography enthusiast. </p>
-        <p class="p7">The software being used for this project is the Arduino IDE associated with the board 
-            available for free download at https://www.arduino.cc/en/software. Also on the site over at the 
-            documentation tab are hundreds of tutorials and documentation required to gain the necessary 
-            skills needed for programming the board. In addition to the Arduino Uno board itself the device 
-            will use a BN-880 GPS module with built-in HMC5883L magnetometer, giving visual and audio through 
-            use of a basic 16x2 LCD display and Buzzer. With the potential addition of a ESP8266 WIFI module 
-            or similar in later development. All of these components are readily available from countless 
-            online retailers at relatively low cost, and thanks to an active Arduino community and official 
-            documentation there are guides and templates out there for all of these modules. Lastly is the 
-            3D printed enclosure which will require the most design work as well as needing some knowledge 
-            of a 3D design software such as AutoCAD. The printing itself can easily be out sourced to a 
-            number of companies that will take your design and produce anything from single units to 
-            thousands, at again relatively low cost.</p> 
-    </section>
-    <div class="assets">
-        <p></p>
-    </div>
-    <p class="fig4"><wrap class="fig_bold">Figure 10:</wrap><wrap class="fig_italic"> Arduino Composite </wrap>2022, screenshots</p>
-    <p class="p8">If this project is successful it will mean having a reliable, consistent and efficient way 
-        to get setup for a night of astrophotography. Not only will it make setup orders of magnitude easier, 
-        but to be able to quickly and easily do checks throughout the session if you happen to bump the tripod 
-        or decide to move the whole setup slightly for a better line of sight. I would like to think that with 
-        the all of the incredible things happening in the space industry such as the recently deployed James 
-        Web Space Telescope to name only one, and the fact that these events are getting tonnes of media attention 
-        gives me hope that more folks will be inspired to go out and capture a piece of this vast and possibly 
-        infinite universe we live in. It would be my hope that this device could make getting started with 
-        astrophotography a slightly less daunting and more enjoyable experience, taking the most of the 
-        guess work out of the alignment process. While preserving some sanity for when you have to learn 
-        the editing process.</p>
 </body>
 </html>
