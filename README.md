@@ -1,1 +1,3 @@
-# assignment_website
+RMIT - Assignment #1 Website
+
+Peter Thomson
